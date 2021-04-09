@@ -11,15 +11,15 @@ export default {
         return axios.post("/api/books", bookData);
     },
 
-    getBooks: function() {
+    getBooks: function () {
         return axios.get("/api/books");
     },
 
-    deleteBooks: function(id) {
-        return axios.delete("/api/books" + id);
+    deleteBook: function (id) {
+        return axios.delete("/api/books/" + id);
     },
 
-    getBooks: function(id) {
-        return axios.get("/api/books" + id)
+    getBook: function (id) {
+        return axios.get("/api/books/" + id);
     }
-}
+};

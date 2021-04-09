@@ -2,7 +2,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
-const Jumbotron = (props) => (
+const Jumbo = (props) => (
     <Jumbotron fluid className="text-center">
         <Container>
             <h1>Google Books Search</h1>
@@ -11,4 +11,4 @@ const Jumbotron = (props) => (
     </Jumbotron>
 );
 
-export default Jumbotron;
+export default Jumbo;
