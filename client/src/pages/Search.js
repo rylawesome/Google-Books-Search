@@ -7,7 +7,8 @@ import API from "../utils/API";
 import BookCard from "../components/BookCard";
 
 const Search = () => {
-    const [searchTerm, setSearchTerm] = useState("Austin"); 
+    //set initial search term - who doesn't love Harry Potter?
+    const [searchTerm, setSearchTerm] = useState("Harry Potter"); 
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
@@ -38,8 +39,10 @@ const Search = () => {
     function handleBookSubmit(book) {
         if (book.title) {
             API.saveBook(
+                //bookData
                 {
                     title: book.title,
+                    subtitle: book.subtitle,
                     authors: book.authors,
                     description: book.description,
                     image: book.imageLinks.thumbnail,
